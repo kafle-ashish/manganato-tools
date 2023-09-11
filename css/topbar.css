@@ -1,0 +1,63 @@
+#top-bar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #2f2f2f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 400;
+  height: 50px;
+  font-family: hind, simhei, verdana, Helvetica, sans-serif;
+
+  .better-navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+
+    .toon-controls,
+    .toon-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .toon-controls {
+      .button {
+        background-color: #070707;
+        height: 33px;
+        width: 32px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        margin: 0 4px;
+      }
+    }
+
+    .better-navigation-chapter {
+      width: 44%;
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .toon-separator {
+        padding: 4px 10px 0px 10px;
+      }
+    }
+
+    .toon-control-center {
+      width: 56%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      padding-left: 40px;
+    }
+  }
+}

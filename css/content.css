@@ -1,0 +1,7 @@
+.panel-logo-chapter, .panel-breadcrumb, .panel-navigation, .panel-chapter-info-top {
+    display: none;
+}
+
+.body-site {
+    background-color: white;
+}

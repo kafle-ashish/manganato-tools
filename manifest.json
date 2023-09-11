@@ -1,0 +1,31 @@
+{
+  "name": "Manganato Tools",
+  "description": "A Google Chrome extension for Manganato!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "/assets/icons/48.png",
+    "128": "/assets/icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "/assets/icons/48.png",
+      "128": "/assets/icons/128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chapmanganato.com/manga-*/chapter-*"],
+      "css": ["css/content.css", "css/topbar.css"],
+      "js": ["js/content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
